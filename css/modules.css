@@ -1,0 +1,404 @@
+/*
+ * Modulifier || Code released under the UNLICENSE
+ * Code under other copyrights & licenses listed below.
+ * https://modulifier.web-dev.tools/#responsive;images;list-group;embed;hidden;positioning
+ */
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+template {
+  display: none;
+}
+
+details {
+  cursor: pointer;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+img {
+  border: 0;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+svg {
+  fill: currentColor;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+svg.img-flex {
+  width: 100%;
+  height: 100%;
+}
+
+.image-replacement, .ir {
+  overflow: hidden;
+  direction: ltr;
+  text-align: left;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.list-group, .list-group-inline, .list-group--inline {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.list-group > dd {
+  margin-left: 0;
+}
+
+.list-group-inline::before,
+.list-group-inline::after,
+.list-group--inline::before,
+.list-group--inline::after {
+  content: "";
+  display: table;
+}
+
+.list-group-inline::after,
+.list-group--inline::after {
+  clear: both;
+}
+
+.list-group-inline > li,
+.list-group--inline > li {
+  display: inline-block;
+}
+
+.list-group-inline > dt,
+.list-group--inline > dt {
+  clear: left;
+  float: left;
+  width: 11em;
+}
+
+.list-group-inline > dd,
+.list-group--inline > dd {
+  float: left;
+  min-width: 12em;
+}
+
+.embed {
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.embed-1by1, .embed--1by1 {
+  padding-top: 100%; /* Square */
+}
+
+.embed-4by3, .embed--4by3 {
+  padding-top: 75%; /* Traditional TV/computer screens */
+}
+
+.embed-iso216, .embed--iso216 {
+  padding-top: 70.92%; /* A-standard paper sizes */
+}
+
+.embed-3by2, .embed--3by2 {
+  padding-top: 66.6%; /* Classic 35 mm film & most digital photos, landscape */
+}
+
+.embed-2by3, .embed--2by3 {
+  padding-top: 150%; /* Classic 35 mm film & most digital photos, portrait */
+}
+
+.embed-golden, .embed--golden {
+  padding-top: 61.8%; /* The Golden Ratio */
+}
+
+.embed-16by9, .embed--16by9 {
+  padding-top: 56.25%; /* HD TV */
+}
+
+.embed-185by100, .embed--185by100 {
+  padding-top: 54.05%; /* Common widescreen cinema */
+}
+
+.embed-24by10, .embed--24by10 {
+  padding-top: 41.667%; /* Widescreen cinema: 2.4:1 */
+}
+
+.embed-3by1, .embed--3by1 {
+  padding-top: 33.3333%; /* Panorama photos */
+}
+
+.embed-4by1, .embed--4by1 {
+  padding-top: 25%; /* Polyvision */
+}
+
+.embed-5by1, .embed--5by1 {
+  padding-top: 20%; /* Really wide... */
+}
+
+.embed-item, .embed__item {
+  min-height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+[hidden], .hidden {
+  /* stylelint-disable declaration-no-important */
+  display: none !important;
+  visibility: hidden !important;
+  /* stylelint-enable */
+}
+
+.visually-hidden {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  clip: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.chop {
+  overflow: hidden;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scrollable {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block, .ib {
+  display: inline-block;
+}
+
+.valign-top {
+  vertical-align: top;
+}
+
+.valign-bottom {
+  vertical-align: bottom;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.static {
+  position: static;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.zindex-2 {
+  z-index: 2;
+}
+
+.zindex-3 {
+  z-index: 3;
+}
+
+.pin-top-left, .pin-tl {
+  top: 0;
+  left: 0;
+}
+
+.pin-top-right, .pin-tr {
+  top: 0;
+  right: 0;
+}
+
+.pin-bottom-left, .pin-bl {
+  bottom: 0;
+  left: 0;
+}
+
+.pin-bottom-right, .pin-br {
+  bottom: 0;
+  right: 0;
+}
+
+.pin-top-center, .pin-tc {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.pin-bottom-center, .pin-bc {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pin-center-left, .pin-cl {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pin-center-right, .pin-cr {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pin-center, .pin-c {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.width-quarter, .w-1-4 {
+  width: 25%;
+}
+
+.width-half, .w-1-2 {
+  width: 50%;
+}
+
+.width-full, .w-1 {
+  width: 100%;
+}
+
+.height-quarter, .h-1-4 {
+  height: 25%;
+}
+
+.height-half, .h-1-2 {
+  height: 50%;
+}
+
+.height-full, .h-1 {
+  height: 100%;
+}

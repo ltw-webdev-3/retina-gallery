@@ -1,0 +1,61 @@
+repo: 'retina-gallery'
+canvasCourse: 'web-dev-3'
+
+naming: true
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 2
+  allCommitted: true
+  allSynced: true
+
+html:
+  - path: 'index.html'
+    locked: true
+
+css:
+  - path: 'css/main.css'
+    locked: true
+  - path: 'css/modules.css'
+    locked: true
+  - path: 'css/grid.css'
+    locked: true
+  - path: 'css/type.css'
+    locked: true
+
+files:
+  - path: "images/mars-1.jpg"
+    maxWidth: 2500
+    minWidth: 2500
+    maxSize: 265
+    smushed: true
+  - path: "images/mars-2.jpg"
+    maxWidth: 1500
+    minWidth: 1400
+    maxSize: 240
+    smushed: true
+  - path: "images/mars-3.jpg"
+    maxWidth: 1500
+    minWidth: 1400
+    maxSize: 240
+    smushed: true
+  - path: "images/mars-4.jpg"
+    maxWidth: 1000
+    minWidth: 900
+    maxSize: 100
+    smushed: true
+  - path: "images/mars-5.jpg"
+    maxWidth: 1000
+    minWidth: 900
+    maxSize: 100
+    smushed: true
+  - path: "images/mars-6.jpg"
+    maxWidth: 1000
+    minWidth: 900
+    maxSize: 100
+    smushed: true
+
+screenshots:
+  - path: 'index.html'
+    sizes: [320, 400, 608, 960, 1440]
