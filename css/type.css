@@ -54,7 +54,7 @@ caption {
 
 hr {
   border: 0;
-  border-top: 1px solid;
+  border-top: 2px solid #000;
   height: 0;
 }
 
@@ -71,13 +71,15 @@ caption {
 
 th,
 td {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #000;
   text-align: left;
   vertical-align: top;
 }
 
 thead th {
   vertical-align: bottom;
+
+  border-bottom-width: 2px;
 }
 
 .text-left {
@@ -125,12 +127,24 @@ thead th {
   margin-left: auto;
   margin-right: auto;
   max-width: 52em;
+  width: 100%;
+}
+
+.wrapper-no-center {
+  max-width: 52em;
+  width: 100%;
 }
 
 .max-length {
   margin-left: auto;
   margin-right: auto;
   max-width: 36em;
+  width: 100%;
+}
+
+.max-length-no-center {
+  max-width: 36em;
+  width: 100%;
 }
 
 h1,
@@ -228,15 +242,14 @@ select {
   height: calc(1.3rem + .1625rem + .1625rem);
 }
 
-input[type="color"] {
+[type="color"] {
   width: calc(1.3rem + .1625rem + .1625rem);
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   display: inline-block;
   height: auto;
-  width: auto;
 }
 
 .push {
@@ -355,16 +368,15 @@ input[type="radio"] {
 .island-quarter,
 .island-1-4,
 td,
-table th,
-fieldset {
+table th {
   padding: .325rem;
 }
 
 .island-eighth,
 .island-1-8,
-input,
-textarea,
-select {
+input:not([type="checkbox"]),
+input:not([type="radio"]),
+textarea {
   padding: .1625rem;
 }
 
@@ -396,6 +408,21 @@ caption {
 .gutter-1-8 {
   padding-left: .1625rem;
   padding-right: .1625rem;
+}
+
+select {
+  padding: 0 .1625rem;
+}
+
+fieldset {
+  padding: .325rem 0;
+
+  border: 0;
+  border-top: 2px solid #000;
+}
+
+legend {
+  padding-right: .325rem;
 }
 
 @media only screen and (min-width: 38em) {
@@ -520,15 +547,14 @@ caption {
     height: calc(1.4rem + .175rem + .175rem);
   }
 
-  input[type="color"] {
+  [type="color"] {
     width: calc(1.4rem + .175rem + .175rem);
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  [type="checkbox"],
+  [type="radio"] {
     display: inline-block;
     height: auto;
-    width: auto;
   }
 
   .push {
@@ -647,16 +673,15 @@ caption {
   .island-quarter,
   .island-1-4,
   td,
-  table th,
-  fieldset {
+  table th {
     padding: .35rem;
   }
 
   .island-eighth,
   .island-1-8,
-  input,
-  textarea,
-  select {
+  input:not([type="checkbox"]),
+  input:not([type="radio"]),
+  textarea {
     padding: .175rem;
   }
 
@@ -688,6 +713,21 @@ caption {
   .gutter-1-8 {
     padding-left: .175rem;
     padding-right: .175rem;
+  }
+
+  select {
+    padding: 0 .175rem;
+  }
+
+  fieldset {
+    padding: .35rem 0;
+
+    border: 0;
+    border-top: 2px solid #000;
+  }
+
+  legend {
+    padding-right: .35rem;
   }
 
 }
@@ -814,15 +854,14 @@ caption {
     height: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  input[type="color"] {
+  [type="color"] {
     width: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  [type="checkbox"],
+  [type="radio"] {
     display: inline-block;
     height: auto;
-    width: auto;
   }
 
   .push {
@@ -941,16 +980,15 @@ caption {
   .island-quarter,
   .island-1-4,
   td,
-  table th,
-  fieldset {
+  table th {
     padding: .375rem;
   }
 
   .island-eighth,
   .island-1-8,
-  input,
-  textarea,
-  select {
+  input:not([type="checkbox"]),
+  input:not([type="radio"]),
+  textarea {
     padding: .1875rem;
   }
 
@@ -982,6 +1020,21 @@ caption {
   .gutter-1-8 {
     padding-left: .1875rem;
     padding-right: .1875rem;
+  }
+
+  select {
+    padding: 0 .1875rem;
+  }
+
+  fieldset {
+    padding: .375rem 0;
+
+    border: 0;
+    border-top: 2px solid #000;
+  }
+
+  legend {
+    padding-right: .375rem;
   }
 
 }
@@ -1108,15 +1161,14 @@ caption {
     height: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  input[type="color"] {
+  [type="color"] {
     width: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  [type="checkbox"],
+  [type="radio"] {
     display: inline-block;
     height: auto;
-    width: auto;
   }
 
   .push {
@@ -1235,16 +1287,15 @@ caption {
   .island-quarter,
   .island-1-4,
   td,
-  table th,
-  fieldset {
+  table th {
     padding: .375rem;
   }
 
   .island-eighth,
   .island-1-8,
-  input,
-  textarea,
-  select {
+  input:not([type="checkbox"]),
+  input:not([type="radio"]),
+  textarea {
     padding: .1875rem;
   }
 
@@ -1276,6 +1327,21 @@ caption {
   .gutter-1-8 {
     padding-left: .1875rem;
     padding-right: .1875rem;
+  }
+
+  select {
+    padding: 0 .1875rem;
+  }
+
+  fieldset {
+    padding: .375rem 0;
+
+    border: 0;
+    border-top: 2px solid #000;
+  }
+
+  legend {
+    padding-right: .375rem;
   }
 
 }
