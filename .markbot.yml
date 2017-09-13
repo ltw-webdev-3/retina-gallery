@@ -1,14 +1,10 @@
 repo: 'retina-gallery'
 canvasCourse: 'web-dev-3'
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 2
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - screenshots-all
 
 html:
   - path: 'index.html'
@@ -55,7 +51,3 @@ files:
     minWidth: 900
     maxSize: 100
     smushed: true
-
-screenshots:
-  - path: 'index.html'
-    sizes: [320, 400, 608, 960, 1440]
