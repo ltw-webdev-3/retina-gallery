@@ -1,7 +1,7 @@
 ---
 summary: 'Given a complete website, export the images into the right dimensions, compress & smush.'
 time: '1 hour'
-deliverables: '1 HTML file, 4 CSS file, images'
+deliverables: '1 HTML file, 4 CSS files, images'
 download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-3/retina-gallery-download.zip'
 ---
 
